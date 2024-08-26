@@ -1,0 +1,29 @@
+html {
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+/* Your CSS below here */
+div {
+  width: 200px; /* 合理宽度 */
+  height: 200px; /* 合理高度 */
+  display: flex; /* 使用 Flex 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  font-size: 1.1rem; /* 字体稍大一点，根据 rem 值计算得出，1rem 大约为 16px，因此 1.1rem 大约为 17.6px */
+  line-height: 50px; /* 文本纵向居中 */
+  color: #ffffff; /* 字体颜色 */
+  background-color: red; /* 基础颜色作为背景颜色 */
+  text-shadow: 1px 1px 1px black; /* 增加黑色文字阴影 */
+  border-radius: 10px; /* 精巧的圆角边框 */
+  border: 1px solid #2a4c6d; /* 与基础颜色相近、1 像素宽的实线边框 */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2),
+    /* 标准的盒阴影 */ inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+    /* 左上角附近的白色半透明阴影 */ inset -2px -2px 5px rgba(0, 0, 0, 0.5); /* 右下角附近的黑色半透明阴影 */
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0.2)
+  ); /* 指向右下角的黑色半透明线性渐变 */
+}

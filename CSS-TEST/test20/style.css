@@ -1,0 +1,171 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: arial;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 0.2px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+h1,
+h2 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 1.5rem;
+}
+li,
+a {
+  font-size: 1.3rem;
+}
+@font-face {
+  font-family: "ciclefina";
+  src: url("fonts/cicle_fina-webfont.eot");
+  src: url("fonts/cicle_fina-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/cicle_fina-webfont.woff2") format("woff2"),
+    url("fonts/cicle_fina-webfont.woff") format("woff"),
+    url("fonts/cicle_fina-webfont.ttf") format("truetype"),
+    url("fonts/cicle_fina-webfont.svg#ciclefina") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  text-align: center;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+/* 设置 link 状态的颜色 */
+a:link {
+  color: #a66;
+}
+
+/* 设置 visited 状态的颜色 */
+a:visited {
+  color: #a66;
+}
+
+/* 设置 focus 状态的颜色 */
+a:focus {
+  color: #a66;
+  text-decoration: none;
+}
+
+/* 设置 hover 状态的颜色 */
+a:hover {
+  color: #a66;
+  text-decoration: none;
+}
+a:active {
+  background-color: blue; /* 活动状态的背景色 */
+  color: #333; /* 活动状态的字体颜色 */
+  text-decoration: underline; /* 活动状态的下划线 */
+}
+
+section p a {
+  position: relative; /* 设置相对定位 */
+  padding-right: 20px; /* 添加一些右侧填充以容纳图标 */
+}
+
+section p a::after {
+  content: ""; /* 必须有内容才能显示伪元素 */
+  position: absolute; /* 设置绝对定位 */
+  top: 50%; /* 相对于父元素垂直居中 */
+  right: 0; /* 相对于父元素右侧 */
+  transform: translateY(-50%); /* 垂直居中 */
+  width: 20px; /* 图标宽度 */
+  height: 20px; /* 图标高度 */
+  background-image: url("external-link-52.png"); /* 外部链接图标的路径 */
+  background-size: contain; /* 图标适应容器大小 */
+  background-repeat: no-repeat; /* 防止图标重复 */
+}
+
+ul,
+ol {
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+/* 导航栏样式 */
+nav {
+  background-color: white; /* 导航栏背景颜色 */
+  color: #fff; /* 文字颜色 */
+  padding: 10px; /* 导航栏内边距 */
+}
+
+/* 导航链接样式 */
+nav ul {
+  border: #333;
+  color: white; /* 链接文字颜色 */
+  text-decoration: none; /* 去除下划线 */
+  margin-right: 20px; /* 链接之间的右边距 */
+}
+
+/* 当链接悬停时的样式 */
+nav a:hover {
+  text-decoration: underline; /* 悬停时显示下划线 */
+}
+nav li {
+  border: 1px solid black; /* 添加边框 */
+  padding: 5px 10px; /* 设置内边距 */
+  margin: 4rem 5px; /* 设置外边距 */
+  height: 5rem;
+  text-align: center;
+  font-size: 30px;
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center;
+}
